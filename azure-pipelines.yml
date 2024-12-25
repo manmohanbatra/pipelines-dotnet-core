@@ -15,7 +15,7 @@ steps:
 - task: CmdLine@2
   displayName: Create file
   inputs:
-    script: 'echo $(SECRET_NAME) > secret.txt'
+    script: 'echo $(mysecret) > secret.txt'
 - task: CopyFiles@2
   displayName: Copy file
   inputs:
